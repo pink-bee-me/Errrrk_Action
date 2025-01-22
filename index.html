@@ -42,24 +42,24 @@
            <ul id="NavBar">
                 
                   
-                <li class="navItem active">
-                    <a class="navLink" href="#Home" onclick="">Home</a>
+                <li class="navItem">
+                    <a class="navLink active" href="#Home" >Home</a>
                 </li>
 
                 <li class="navItem">
-                    <a class="navLink" href="#Slideshow" onclick="">Slideshow</a>
+                    <a class="navLink" href="#Slideshow">Slideshow</a>
                 </li>
 
                 <li class="navItem">
-                    <a class="navLink" href="#About" onclick="">About</a>
+                    <a class="navLink" href="#About">About</a>
                 </li>
 
                 <li class="navItem">
-                    <a class="navLink" href="#LinkedIn" onclick="">LinkedIn</a>
+                    <a class="navLink" href="#LinkedIn">LinkedIn</a>
                 </li>
 
                 <li class="navItem">
-                    <a class="navLink" href="#GitHub" onclick="">GitHub</a>
+                    <a class="navLink" href="#GitHub">GitHub</a>
                 </li>
 
                 <li class="navItem">
@@ -69,7 +69,16 @@
 
         </div>  
       </nav>
-    
+    <script>
+       var navLinksNow= document.querySelectorAll ('.navItem', 'navLink');
+ 
+        navLinksNow.forEach(navLink=>{
+           item.addEventListener('click', function() {
+            navLinksNow.forEach(navLink=> item.classList.remove('active'));
+            this.classList.add('active');
+        });
+    }); 
+    </script>
 </header>
         
 
@@ -592,12 +601,22 @@ Our sole purpose is to make people aware of just how <span class="AlmostFamous">
     </footer>
   
 
-  <script>
-    // Add toggle functionality for hamburger menu
-    function toggleMenu() {
-      const navMenu = document.querySelector(".nav-menu");
-      navMenu.classList.toggle("active");
-    }
+ 
+
+// Select all the links in the navbar
+const navbarItems = document.querySelectorAll('#NavBar .navItem');
+
+// Add a click event listener to each link
+navbarItems.forEach(item => {
+  item.addEventListener('click', function () {
+    // Remove 'active' class from all items
+    navbarItems.forEach(item => item.classList.remove('active'));
+
+    // Add 'active' class to the clicked item
+    this.classList.add('active');
+  });
+});
+
   </script>
         
 </body>
