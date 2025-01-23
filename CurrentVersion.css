@@ -1657,6 +1657,21 @@ line-height:1.5;
   font-size: 2rem;
 }
 
+.in-line-word{
+  opacity:.25;
+    filter:grayscale(100%);
+    transition: filter 2s 1.15s ease-in-out,
+                opacity 1.5s 1s ease-out;
+    will-change: filter, opacity;
+}
+
+
+in-line-word.is-visible{
+  opacity:1;
+  filter:grayscale(0%);
+}
+
+
 .item-2 {
   grid-column: 8/span 4;
   grid-row: 3/ span 3;
@@ -2330,7 +2345,7 @@ div#copy p{
     --fs-sm: 1rem;
   }
 
-
+}
 
 @media only screen and (max-width: 600px) {
 }
@@ -2394,5 +2409,11 @@ div#copy p{
     width: 25px;
     height: 3px;
     background-color: white;
+  }}
+
+  /* .show-on-scroll {
+
   }
-}}
+
+  .show-on-scroll.is-visible{ */
+
