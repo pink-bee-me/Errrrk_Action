@@ -381,7 +381,7 @@ header {
   height: 100%;
   margin: 0;
   overflow: hidden; /*Ensures content overflow is not displayed*/
-  background-color: rgba(27, 27, 29, .95); /*This colors the navbar black*/
+  background-color: rgba(27, 27, 29, .35); /*This colors the navbar black*/
   /* border: 3px solid rgb(134, 94, 228); */
   /*(border thickness|line type(solid,dashed,etc.)|border color)*/
   z-index: 10; /*Ensures navbar sits on top layer of webpage*/
@@ -423,7 +423,7 @@ header {
   height: auto;
   text-decoration: none; /*Removes standard anchor tag underlines*/
   color: slateblue;
-  text-shadow: 0.25px 0.25px 0.25px orchid, 0.5px 0.5px 0.5px cyan,
+  text-shadow: 0.25px 0.25px 0.25px slateblue, 0.5px 0.5px 0.5px cyan,
     0.75px 0.75px 0.75px cornflowerblue, 1px 1px 1px white, 1.25px 1.25px 1.25px cyan,
     1.5px 1.5px 1.5px white, 1.75px 1.75px 1.75px white,
     2.25px 2.25px 2.25px black; /* makes the text on the navbar bold when hovered o*/
@@ -1040,10 +1040,10 @@ center#Hi {
 div.Slide_Text {
   position: relative;
   top: 7vh;
-  left: 0vw;
+  left: 1vw;
   font-size: 1rem;
   background-color: rgba(0, 0, 0, 0.5);
-  width: 70%;
+  width: 55%;
   height:40%;
   margin: auto;
   padding:1%;
@@ -1061,7 +1061,7 @@ div.Slide_Text {
 #dotBox {
   position: relative;
   display: block;
-  top: 55vh;
+  top: 57vh;
   left: 2vw;
   margin: 0 auto;
   width: 15vw;
@@ -1084,9 +1084,9 @@ div.Slide_Text {
 }
 
 /* Hover effect for slideshow dots */
-.active,
-.dot:hover {
-  background-color:rgb(250, 104, 250);
+
+.active,.dot:hover {
+  background-color:rgb(247, 143, 247);
 }
 
 section#About {
@@ -1099,6 +1099,7 @@ section#About {
   margin-top: 3vh;
   padding-top: 10vh;
   z-index: 2;
+  
 }
 
 section#About h2 {
@@ -1243,6 +1244,10 @@ div#TheGist_Container p {
   color: white;
 }
 
+.content {
+line-height:200%;
+}
+
 span#CriticalThinking {
   font-size:var(--fs-xxl);
   letter-spacing: 0.2rem;
@@ -1282,17 +1287,20 @@ span#ArtForm {
   position: relative;
   top: -7vh;
   left: 0vw;
+  width:85%;
+  margin:0 auto;
 }
 
 #CodeIs {
-  color: white;
+  color: rgb(198, 158, 234);
   text-shadow: 1.25px 1.25px 1.25px darkturquoise, 1.15px 1.15px 1.15px fuchsia,
     1.5px 1.5px 1.5px fuchsia, 2.25px 2.25px 2.25px fuchsia,
     2.5px 2.5px 2.5px cyan, 2.75px 2.75px 2.75px cyan, 3px 3px 3px white,
     3.25px 3.25px 3.25px yellow, 3.5px 3.5px 3.5px yellow;
-
+Font-family:var(--ff-JS);
   font-size: 3.25rem;
-  line-height: 2.75rem;
+  line-height: 3.75rem;
+ 
 }
 
 #Para_3 {
@@ -1325,9 +1333,7 @@ span#ArtForm {
   font-size: 1.15rem;
 }
 
-#Polished,
-#Masterpiece,
-#Doodle {
+#Polished{
   position: relative;
   text-align: center;
   color: cyan;
@@ -1336,10 +1342,20 @@ span#ArtForm {
     2.75px 2.75px 2.75px black, 3px 3px 3px black, 3.15px 3.15px 3.15px black,
     3.25px 3.25px 3.25px white, 3.5px 3.5px 3.5px white,
     3.75px 3.75px 3.75px white, 4px 4px 4px white, 4.25px 4.25px 4.25px white;
-  font-size: 1.45rem;
+  font-size: 1.75rem;
   font-weight: 600;
   line-height: 1.5rem;
 }
+
+#Masterpiece{
+
+}
+
+
+#Doodle {
+
+}
+
 
 #Foundation {
   color: yellow;
@@ -1377,6 +1393,8 @@ line-height:1.5;
 font-family:var(--ff-JS);
 font-size:var(--fs-lg);
 }
+
+
 
 #Adventures,
 #Trials,
@@ -1554,7 +1572,7 @@ font-size:var(--fs-lg);
     3.15px 3.15px 3.15px white, 3.25px 3.25px 3.25px white,
     3.5px 3.5px 3.5px lime, 3.75px 3.75px 3.75px lime;
   font-size: 4rem;
-  line-height: 2rem;
+  line-height: 1.5rem;
     
 }
 
@@ -1590,7 +1608,7 @@ font-size:var(--fs-lg);
     2.5px 2.5px 2.5px cyan, 2.75px 2.75px 2.75px white, 3px 3px 3px white,
     3.15px 3.15px 3.15px black, 3.25px 3.25px 3.25px black,
     3.5px 3.5px 3.5px white, 3.75px 3.75px 3.75px white, 4px 4px 4px white;
-  font-size: var(--fs-xl);
+  font-size: var(--fs-lg);
   line-height: 1.5rem;
     
 }
@@ -1630,10 +1648,17 @@ font-size:var(--fs-lg);
   3.15px 3.15px 3.15px fuchsia, 3.25px 3.25px 3.25px fuchsia,
   3.5px 3.5px 3.5px slateblue, 3.75px 3.75px 3.75px slateblue,
   4px 4px 4px white, 4.25px 4.25px 4.25px white, 4.5px 4.5px 4.5px white;
-font-size:var(--fs-lg);
+font-size:3.0rem;
 font-family:var(--ff-Lato);
 line-height:1.5;
     
+}
+
+#NiceToMeetYou {
+    color: white;
+    font-size:2.0rem;
+    font-family:var(--ff-Lato);
+  padding-left:5vw;
 }
 
 #LaurieSue {
@@ -1643,10 +1668,11 @@ line-height:1.5;
     2.75px 2.75px 2.75px fuchsia, 3px 3px 3px fuchsia,
     3.15px 3.15px 3.15px white, 3.25px 3.25px 3.25px white,
     3.5px 3.5px 3.5px lime, 3.75px 3.75px 3.75px lime;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
 }
 
 #CantWait {
+  padding-left:10vw;
   color: yellow;
   text-shadow: 1.25px 1.25px 1.25px yellow, 1.5px 1.5px 1.5px slateblue,
     2px 2px 2px fuchsia, 2.15px 2.15px 2.15px fuchsia,
@@ -1660,21 +1686,41 @@ line-height:1.5;
 .in-line-word{
   opacity:.25;
     filter:grayscale(100%);
-    transition: filter 2s 1.15s ease-in-out,
-                opacity 1.5s 1s ease-out;
+    transition: filter 2s 1.15s ease,
+                opacity 1.5s 1s ease;
     will-change: filter, opacity;
 }
 
 
-in-line-word.is-visible{
+.in-line-word.is-visible{
   opacity:1;
   filter:grayscale(0%);
 }
+/* 
+.show-on-scroll{
+  opacity:1;
+  filter:grayscale(0%);
+  transform:translateY(20px);
+  transition: opacity 1.5s 1s ease-out,
+              transform 1.5s 1s ease-out;
+  will-change: opacity, transform;
+  animation: scroll-fade-in-out linear;
+  animation-timeline: view()
+}
+
+@keyframes scroll-fade-in-out{
+  0%{
+      opacity:0;
+  }
+100%  {
+      opacity:1;
+  }
+} */
 
 
 .item-2 {
   grid-column: 8/span 4;
-  grid-row: 3/ span 3;
+  grid-row: 1/ span 3;
   
   padding-left: 5vw;
 }
@@ -1724,9 +1770,7 @@ span#Author {
 }
 
 #Earth_Lightbulb_Pic img:hover {
-  filter: grayscale(
-    0%
-  ); /* Brings back most of the image's color when hovered over */
+  filter: grayscale(0%); /* Brings back most of the image's color when hovered over */
   transition: transform ease-in-out 3s;
   transform: scale(1.15);
 }
@@ -1734,52 +1778,55 @@ span#Author {
 /*LinkedIn Stuff */
 
 div.item-3 {
-  grid-column: 8/span 4;
-  grid-row: 10/12; 
+  position:relative;
+  grid-column: 8/span 5;
+  grid-row: 9/11; 
  
-  padding-left: 5vw;
-  
+  padding-left: 3vw;
+  padding-right:3vw;
 }
 
 div.linkedIn_Container {
   position: relative;
-  width:35vw;
-  height: 40vh;
-  padding: 7vh 5vw 2vh 3vw;
-  background-color: coral;
+  top:0vh;
+  width: 90%;
+  height: 100%;
+ background-color: coral;
   border: 10px dotted rgba(234, 236, 238, 0.896);
   border-radius: 10px;
-
-}
-
-div.linkedIn_Container a {
-  position: relative;
-  /* width:100%;
-  height:100%; */
-  left: 1vw;
-  object-fit:contain;
   margin:auto;
+ padding:5% 4% 0% 3%;
+  object-fit:cover;
+
 }
 
-/* div#LinkedInText {
-  position: relative;
-  top: -13vh;
-  left: -0.5vw;
-  width: 90%;
-  height: auto;
+#LinkedInPic{
+  position:relative;
+  top:0vh;
+  left:-3vw;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:50% 50%;
+}
+div.linkedIn_Container a{
+
+  position:relative;
+  display:block;
+  top:-10vh;
+  left:0vw;
+  width:100%;
+  height:auto;
+  margin:0 auto;
+  color:fuchsia;
+  font-size:1.25rem;
+  font-weight:bold;
+  text-decoration:none;
+  text-align:center;
+  background-color:peachpuff;
+
 }
 
-div#LinkedInText a {
-  text-align: center;
-  color: magenta;
-  text-shadow: 1.25px 1.25px 1.25px magenta, 1.5px 1.5px 1.5px slateblue,
-    2px 2px 2px slateblue, 2.25px 2.25px 2.25px slateblue,
-    2.5px 2.5px 2.5px black, 2.75px 2.75px 2.75px white, 3px 3px 3px white,
-    3.15px 3.15px 3.15px white, 3.25px 3.25px 3.25px white,
-    3.5px 3.5px 3.5px white, 3.75px 3.75px 3.75px white;
-
-  font-size: 1.5em;
-} */
 
 div.linkedIn_Container img#LinkedInPic {
   position: relative;
@@ -1794,16 +1841,18 @@ div.linkedIn_Container img#LinkedInPic {
 }
 
 .item-4 {
-  grid-column: 8/span 4;
-  grid-row: 14/19;
+  position:relative;
+  grid-column: 8/span 5;
+  grid-row: 13/18;
   padding-left: 5vw;
+  padding-right:3vw;
  
 }
 
-div#Faucet-Container {
+#Faucet-Container {
   position: relative;
   object-fit: inherit;
-  width: 35vw;
+  width: 100%;
   height: 100%;
   top:-8vh;
   background-color:cornflowerblue;
@@ -1811,14 +1860,14 @@ div#Faucet-Container {
   margin: auto;
   /* padding:1% 5% 3% 2%; */
   border: 10pt dotted rgba(234, 236, 238, 0.896);
-  transition: transform ease 3s;
+  transition: transform ease-in-out 2.5s;
   z-index: 2;
   color: rgb(247, 224, 205);
 }
 
-div#Faucet-Container img {
+#Faucet-Container img {
   position: relative;
-  top: 9vh;
+  top: 7vh;
   left: -3vw;
   right: 0;
   bottom: 0;
@@ -1828,7 +1877,7 @@ div#Faucet-Container img {
 
 }
 
-p#Albert_Text {
+#Albert_Text {
   position: relative;
   left: 1vw;
   top: 11vh;
@@ -1848,7 +1897,7 @@ p#Albert_Text {
 
 .item-5 {
   grid-column: 8/span 4;
-  grid-row:21/24; 
+  grid-row:19/22; 
   padding-left: 5vw;
 }
 
@@ -1869,7 +1918,7 @@ p#Albert_Text {
 
 a img#GitHubImage {
 position:relative;
-top:0vh;
+top:-5vh;
 left:0vw;
 width:100%;
 height:100%;
@@ -1900,7 +1949,7 @@ object-fit:cover;
 #GitHubAddress a{
   position: relative;
   /* display:inline-block; */
-  top: -9vh;
+  top: -13vh;
   left: 5.15vw;
   width: 20vw;
   margin: 0 auto;
@@ -1978,7 +2027,7 @@ span#Teacher {
 
 .item-7 {
   grid-column: 8/span 4;
-  grid-row: 25/28;
+  grid-row: 22/27;
   padding-left:15%;
 }
 
@@ -2008,7 +2057,7 @@ div#Lightbulb_Container video {
   filter: grayscale(85%);
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
-  object-fit: scale-down;
+  /* object-fit: scale-down; */
   /* opacity:60%; */
 }
 
@@ -2017,7 +2066,7 @@ div#Lightbulb_Container video {
 
 div#Lightbulb_Container h2#LetsTalk {
   position: relative;
- top:-49vh;
+ top:-85vh;
   text-align: center;
   color: rgb(235, 57, 235);
   font-family: "Abril Fatface";
@@ -2028,7 +2077,7 @@ div#Lightbulb_Container h2#LetsTalk {
 
 div#Lightbulb_Container h4#ClickMe {
   position: relative;
-  top: -33vh;
+  top: -39vh;
   text-align: center;
   color: rgb(96, 140, 243);
   font-family: "Josefin Sans";
@@ -2036,6 +2085,40 @@ div#Lightbulb_Container h4#ClickMe {
   font-weight: 600;
   z-index: 1;
 }
+
+#Resume{
+  position: relative;
+  top: -85vh;
+  text-align: center;
+  
+  font-family: "Josefin Sans";
+  font-size: 1.75rem;
+  font-weight: 600;
+  z-index: 1;
+background-color:rgba(0, 0, 0, 0.35);
+cursor:pointer;
+
+}
+
+#Resume_Click a{
+  display:block;
+  text-decoration:none;
+  transition:all 2.5s linear;
+  color: cornflowerblue;
+height:5%;
+width:75%;
+margin:0 auto;
+text-align:center;
+
+}
+
+#Resume_Click a:hover{
+  background-color:rgba(234, 236, 238, 0.896);
+  
+  transform:scale(1.2);
+}
+
+
 
 div#Lightbulb_Container h4#ClickMe a {
   color: rgb(248, 69, 248);
@@ -2062,7 +2145,7 @@ div#Lightbulb_Container h4#ClickMe a {
 section#Poem {
 
 position:relative;
-top:-5vh;
+top:-35vh;
 left:0;
 width:70%;
 height:90vh;
@@ -2073,9 +2156,9 @@ margin:0 auto;
 
 div#Poem_Container {
   position: relative;
-  top: 8;
+  top: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 
   /* background-color:rgba(15, 15, 15, 0.3); */
   border: 10pt dotted rgb(247, 224, 205);
@@ -2098,22 +2181,34 @@ div#Poem_Container video {
   /* filter: grayscale(60%); */
 }
 
+
 div#Poem_Text_Container {
   position: relative;
   width: 100%;
-  height: 105%;
-  top: -90vh;
+  height: 100vh;
+  top: -100vh;
   left: 0vw;
   z-index: 4;
   margin: 0 auto;
-  background-color: rgba(22, 19, 19, 0.45);
   padding:2% 10% 2% 12%;
+  background-color:rgba(3, 3, 3, 0.45);
+  z-index:4;
+
 }
 
-div#Poem_Text_Container p#JobsQuote {
+.poem_text{
+  position:relative;
+  top:0;
+  left:0;
+  width:60%;
+  text-align:center;
+  margin: 0 auto;
+}
+
+ p#JobsQuote {
  
   position: relative;
-  top: 3vh;
+  top: 0vh;
   font-family:var(--ff-JS);
   font-size: 1.35em;
   font-weight: 300;
@@ -2124,11 +2219,11 @@ div#Poem_Text_Container p#JobsQuote {
   margin:0 auto;
 }
 
-p#JobsQuote span#HeresToTheCrazyOnes {
+span#HeresToTheCrazyOnes {
   position: relative;
   display: inline-block;
-  top: 2vh;
-  left:15vw;
+  top: 3vh;
+  left:4vw;
   font-size: 1.35em;
   font-weight: 300;
   color: white;
@@ -2140,24 +2235,35 @@ p#JobsQuote span#HeresToTheCrazyOnes {
 p#JobsQuote span#TheMisfits {
   position: relative;
   display: block;
-  top: 4vh;
+  top: 3vh;
+  left:4vw;
 }
 
 p#Jobs {
   position: relative;
   display: inline-block;
-  top: 2vh;
-  left:22vw;
+  top: 1.5vh;
+  left:0vw;
   font-size: 1.35em;
   font-weight: 300;
   color: white;
 }
 
+#Goodbye{
+  position:relative;
+  top:-25vh;
+  left:0;
+  width:90%;
+  height:auto;
+  margin:5%;
+  background-color:rgba(0, 0, 0, 0.35);
+  z-index:3;
+}
 div.goodbye {
   position: relative;
-  top: 0vh;
+  top: 5vh;
   left: 0vw;
-  width: 50vw;
+  width: 80vw;
   height: auto;
   color: white;
   font-family: "Josefin Sans";
@@ -2165,12 +2271,15 @@ div.goodbye {
   font-weight: 600;
   text-align: center;
   padding: 1.5vh;
+  margin:0 auto;
+  background-color:rgba(0, 0, 0, 0.75);
+
 } 
 
 div.goodbye h4 {
   position: relative;
   top: 3vh;
-  left: 3vw;
+  left: -20vw;
   font-family: "Stalemate", cursive;
   z-index: 3;
   color: peachpuff;
@@ -2186,7 +2295,7 @@ div.goodbye h4 {
 div.goodbye h3 {
   position: relative;
   top: 7vh;
-  left: 10vw;
+  left: -15vw;
   font-family: "Stalemate", cursive;
   z-index: 3;
   color: orchid;
@@ -2204,7 +2313,7 @@ div.goodbye h2 {
   z-index: 3;
   position: relative;
   top: 2vh;
-  left: 10vw;
+  left: 0vw;
   color: slateblue;
   text-shadow: 1px 1px cyan, 1.1px 1.1px 1.1px cyan, 1.2px 1.2px 1.2px cyan,
     1.3px 1.3px 1.3px limegreen, 1.45px 1.45px 1.45px limegreen,
@@ -2222,16 +2331,27 @@ div.goodbye h2 {
 /* FOOTER SECTION*/
 footer {
   width:98%;
+
   margin:2% 1% 3% 1%;
  
   background-color: rgba(0, 0, 0, 0.5);
   color: rgba(135, 156, 197);
 }
 
+div#OscarWilde{
+  position:relative;
+  top:-15vh;
+  left:6vw;;
+  width:50%;
+  height:50%;
+margin:0 auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 div#OscarWilde p q {
   position: relative;
   top: 0vh;
-  left: 30vw;
+  left:0vw;
   text-align: center;
   color: cornflowerblue;
   text-shadow: 1.15px 1.15px 1.15px white;
@@ -2242,17 +2362,18 @@ div#OscarWilde p q {
 
 span#Oscar {
   position: relative;
-  display: inline-block;
-  top: 3vh;
-  left: 45vw;
+  display:block;
+  top: 1vh;
+  left: 16vw;
   z-index: 3;
+  
 }
 
 img#PinkBeeMe_Logo {
   filter: grayscale(0%);
   position: relative;
-  top: 5vh;
-  left: 3vw;
+  top: -2vh;
+  left: 3.5vw;
   display: block;
   margin: auto;
   z-index: 3;
