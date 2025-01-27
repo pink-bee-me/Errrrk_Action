@@ -316,7 +316,7 @@ body {
   /* CSS: body sets opacity to "0" and transition: opacity 11s;
   ... in the HTML:  <body onload="document.body.style.opacity='1'">  */
   opacity: 0;
-  transition: opacity 7s;
+  transition: opacity 3s;
   /* --------------------------------- */
   z-index: -1;
   overflow: hidden;
@@ -381,7 +381,7 @@ header {
   height: 100%;
   margin: 0;
   overflow: hidden; /*Ensures content overflow is not displayed*/
-  background-color: rgba(27, 27, 29, .35); /*This colors the navbar black*/
+  background-color: rgba(27, 27, 29, .55); /*This colors the navbar black*/
   /* border: 3px solid rgb(134, 94, 228); */
   /*(border thickness|line type(solid,dashed,etc.)|border color)*/
   z-index: 10; /*Ensures navbar sits on top layer of webpage*/
